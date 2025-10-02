@@ -1,0 +1,45 @@
+/* Zelda custom styles */
+h1, .zelda-title {
+	font-family: 'IM Fell English SC', 'UnifrakturCook', 'MedievalSharp', cursive;
+	letter-spacing: 0.05em;
+	color: #34d399;
+	text-shadow: 0 2px 8px #1a2e1a88, 0 0px 2px #bfa13a99;
+}
+
+.card-zelda {
+	background: rgba(20, 83, 45, 0.85);
+	border: 2px solid #bfa13a88;
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 24px #000a 0.5;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-zelda:hover {
+	transform: translateY(-4px) scale(1.04);
+	box-shadow: 0 8px 32px #bfa13a55;
+	border-color: #f5e6b2;
+}
+.btn-zelda {
+	background: linear-gradient(90deg, #bfa13a 0%, #34d399 100%);
+	color: #14532d;
+	font-weight: bold;
+	border-radius: 9999px;
+	padding: 0.75rem 2rem;
+	transition: background 0.2s, color 0.2s;
+	border: 2px solid #bfa13a88;
+}
+.btn-zelda:hover {
+	background: linear-gradient(90deg, #34d399 0%, #bfa13a 100%);
+	color: #bfa13a;
+	border-color: #f5e6b2;
+}
+::-webkit-scrollbar {
+	width: 8px;
+	background: #14532d;
+}
+::-webkit-scrollbar-thumb {
+	background: #bfa13a88;
+	border-radius: 8px;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
